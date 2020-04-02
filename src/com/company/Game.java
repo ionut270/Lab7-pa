@@ -37,13 +37,13 @@ public class Game {
             }
         }
 
-        System.out.println("Game completed. Results:");
+        System.out.println("Game over. \nResults:");
         for(Player p : players){
-            int result = p.longestRun();
+            int result = p.longestAp();
             if (result == i)
-                System.out.println("Player " + p.getName() + " has won");
+                System.out.println("The winner is " + p.getName() );
             else
-                System.out.println("Player " + p.getName() + " has " + result + " score");
+                System.out.println( p.getName() + " : " + result);
         }
     }
 }
